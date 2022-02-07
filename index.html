@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" cotent="Max Nägele">
+        <meta name="description" content="Personal page of Max Nägele">
+        <meta name ="robots" content="noindex, nofollow">
+
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body class="center-container">
+        <!-- content START -->
+        <div class="content">
+            <div id="title">
+                Hi, I'm Max
+            </div>
+            <div class="text">
+                IT Student from Bavaria, Germany
+            </div>
+            <div class="link-container">
+                <a class="link" href="https://github.com/quapo">
+                    <img src="./assets/svg/github.svg" width="40" height="40">
+                </a>
+                <a class="link" href="https://www.linkedin.com/in/maximilian-n%C3%A4gele/">
+                    <img src="./assets/svg/linkedin.svg" width="40" height="40">
+                </a>
+                <a class="link" onclick="document.getElementById('modal').style.display = 'block';">
+                    <img src="./assets/svg/identity.svg" width="40" height="40">
+                </a>
+                <a class="link" href="mailto://max@naegele.io">
+                    <img src="./assets/svg/mail.svg" width="40" height="40">
+                </a>
+            </div>
+        </div>
+        <!-- content END -->
+        <script src="./assets/js/glitchAnimationRandomization.js"></script>
+        <script>
+            // Start Glitch Animation
+            const element = document.getElementById('title');
+            const animation = new glitchAnimationRandomization(element);
+            animation.start();
+        </script>
+    </body>
+</html>
