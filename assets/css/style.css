@@ -66,6 +66,7 @@ body {
 .content {
     width:  245px;
     z-index: 0;
+    position: sticky;
 }
 
 .content > #title {
