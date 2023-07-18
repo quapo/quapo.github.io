@@ -26,32 +26,39 @@ body {
     text-transform: none;
   }
   
-  25% {
-    font-weight: var(--anim-25p-fw, 100);
-    font-style: var(--anim-25p-fs, normal);
-    text-decoration-line: var(--anim-25p-tdl, line-through);
-    text-transform: var(--anim-25p-tt, none);
+  10% {
+    font-weight: var(--anim-10p-fw, 100);
+    font-style: var(--anim-10p-fs, normal);
+    text-decoration-line: var(--anim-10p-tdl, line-through);
+    text-transform: var(--anim-10p-tt, none);
   }
   
-  50% {
-    font-weight: var(--anim-50p-fw, 500);
-    font-style: var(--anim-50p-fs, italic);
-    text-decoration-line: var(--anim-50p-tdl, none);
-    text-transform: var(--anim-50p-tt, none);
+  33% {
+    font-weight: var(--anim-33p-fw, 500);
+    font-style: var(--anim-33p-fs, italic);
+    text-decoration-line: var(--anim-33p-tdl, none);
+    text-transform: var(--anim-33p-tt, none);
+  }
+  
+  40% {
+    font-weight: var(--anim-40p-fw, 700);
+    font-style: var(--anim-40p-fs, normal);
+    text-decoration-line: var(--anim-40p-tdl, underline);
+    text-transform: var(--anim-40p-tt, lowercase); 
   }
   
   75% {
-    font-weight: var(--anim-75p-fw, 700);
+    font-weight: var(--anim-75p-fw, 400);
+    font-style: var(--anim-75p-fs, italic);
+    text-decoration-line: var(--anim-75p-tdl, line-through);
+    text-transform: var(--anim-75p-tt, none);
+  }
+
+  100% {
+    font-weight: var(--anim-75p-fw, 100);
     font-style: var(--anim-75p-fs, normal);
     text-decoration-line: var(--anim-75p-tdl, underline);
-    text-transform: var(--anim-75p-tt, lowercase); 
-  }
-  
-  100% {
-    font-weight: var(--anim-100p-fw, 400);
-    font-style: var(--anim-100p-fs, italic);
-    text-decoration-line: var(--anim-100p-tdl, line-through);
-    text-transform: var(--anim-100p-tt, none);
+    text-transform: var(--anim-75p-tt, uppercase);
   }
 }
 
@@ -74,7 +81,7 @@ body {
     font-weight: 700;
     font-size:  36px;
     padding-bottom: 10px;
-    animation: glitch 1s cubic-bezier(0.5, 0.5, 0.5, 0.5) 0s infinite;
+    animation: glitch 1s cubic-bezier(.5,-900,.5,900) 0s infinite;
 }
 
 .content > #title:hover, .content > #title:active {

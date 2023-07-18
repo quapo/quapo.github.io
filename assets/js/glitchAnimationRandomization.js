@@ -23,7 +23,7 @@ class glitchAnimationRandomization {
         this.element.style.animationTimingFunction = `cubic-bezier(${Math.random() * 2 - 1}, ${Math.random() * 2 - 1}, ${Math.random() * 2 - 1}, ${Math.random() * 2 - 1})`;
         
         // Randomize CSS vars
-        for(let i = 25; i <= 100; i += 25){
+        for(const i in [10, 33, 40, 75, 100]){
             // font-weight
             this.element.style.setProperty(`--anim-${i}p-fw`, this.fwArray[Math.floor(Math.random() * this.fwArray.length)]);
             // font-style
