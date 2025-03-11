@@ -18,6 +18,17 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
+button {
+    background: none;
+    color: #ffffff;
+    border: solid 2px #ffffff;
+}
+
+button:hover {
+    background: #ffffff;
+    color: #000000;
+}
+
 @keyframes glitch {
   0% {
     font-weight: 700;
@@ -108,4 +119,8 @@ body {
 
 .content > .link-container > .link:hover {
     opacity: 0.3;
+}
+
+.content > .keys {
+    padding: 15px;
 }
